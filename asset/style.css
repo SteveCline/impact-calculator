@@ -1,0 +1,79 @@
+body { margin:0; padding:0; font-family: Tahoma, Geneva, sans-serif;}
+a { color: #2980b9;}
+#map { position:absolute; top:0; bottom:0; width:100%; }
+.top-bar {
+  font-size: 16px;
+  padding: 4px 10px;
+  position:relative;
+  color: #2c3e50;
+  left:50px;
+  top:10px;
+  float: left;
+  z-index:999;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+#result {
+  color: #c0392b;
+  padding-bottom: 5px;
+	border: 2px solid #c0392b;
+	display: none;
+}
+#calculate-button{
+  cursor: pointer;
+  padding-bottom: 5px;
+  transition-duration: 0.2s;
+ }
+#calculate-button:hover{
+  background: #bdc3c7;
+}
+#calculate-button:focus,
+#calculate-button {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#aboutBox{
+  position: fixed;
+  top:50%;
+  left: 50%;
+  width: 50%;
+  padding: 0 20px;
+  color: #2c3e50;
+  font-size: 0.9em;
+  transform: translate(-50%, -50%);
+  background-color: rgba(236, 240, 241, 0.9);
+  border: 2px solid #2c3e50;
+  z-index: 1000;
+}
+#close{
+  float: right;
+  cursor: pointer;
+}
+#about{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #2c3e50;
+  z-index:999;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.leaflet-popup-close-button{
+	visibility: hidden;
+}
+.leaflet-popup-content-wrapper{
+  background-color:#ecf0f1;
+	border: 2px solid #c0392b;
+	border-radius: 3px;
+}
+.leaflet-popup-content{
+    color:#c0392b; 
+   }
+.leaflet-popup-tip{
+    background-color: #c0392b;
+}
